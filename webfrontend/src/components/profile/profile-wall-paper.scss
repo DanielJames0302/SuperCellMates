@@ -1,0 +1,76 @@
+.profile {
+  &-wallpaper {
+    width: auto;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(227, 221, 221);
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -50px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 50%;
+    height: 50%;
+  }
+}
+.thumbnail {
+  position: relative;
+  &-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.change-thumbnail-btn {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(206, 199, 199);
+  border: 0.5px solid grey;
+  border-radius: 20px;
+
+  position: absolute;
+  right: 2px;
+  bottom: 10px;
+}
+.profile-name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.wallpaper-preview-container {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.menu-change-wallpaper {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+}
+.menu-change-wallpaper-clicked {
+  opacity: 1;
+}
+.wallpaper {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.edit-profile-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
